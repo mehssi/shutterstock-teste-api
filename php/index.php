@@ -1,6 +1,6 @@
 <?php
 
-// Wa use the session to persist our access token
+// We use the session to persist our access token
 session_start();
 
 $client_id = 'f5f432035a0aff1a3bae413f15f129'; // Insert your CLIENT ID here.
@@ -53,7 +53,8 @@ class ShutterstockAPI {
     $url = 'https://api.shutterstock.com/v2/' . $type . '/search?view=full&per_page=5&query=' . $search_terms_for_url;
 
     $ch = curl_init($url);
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: Bearer ' . $this->accessToken));
+    // curl_setopt($ch, CURLOPT_HTTPHEADER, array('Authorization: Bearer ' . $this->accessToken));
+    curl_setopt($ch, CURLOPT_USERPWD, "{$client_id}:{$client_secret}"));
     curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
