@@ -21,6 +21,8 @@
       function encodeAuthorization() {
         var clientId = $('input[name=client_id]').val();
         var clientSecret = $('input[name=client_secret]').val();
+        clientId = 'f5f432035a0aff1a3bae413f15f129';
+        clientSecret = 'c09f3dfa9415739448ba8825bdbbbb';
 
         if (!clientId || !clientSecret) {
           $('#collapseAuthentication').collapse('show');

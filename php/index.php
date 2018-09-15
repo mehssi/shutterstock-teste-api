@@ -1,6 +1,6 @@
 <?php
 
-// We use the session to persist our access token
+// Wa use the session to persist our access token
 session_start();
 
 $client_id = 'f5f432035a0aff1a3bae413f15f129'; // Insert your CLIENT ID here.
