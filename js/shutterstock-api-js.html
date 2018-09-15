@@ -21,8 +21,8 @@
       function encodeAuthorization() {
         var clientId = $('input[name=client_id]').val();
         var clientSecret = $('input[name=client_secret]').val();
-        clientId = 'f5f432035a0aff1a3bae413f15f129';
-        clientSecret = 'c09f3dfa9415739448ba8825bdbbbb';
+        clientId = $('input[name=client_id]').val();
+         clientSecret = $('input[name=client_secret]').val();
 
         if (!clientId || !clientSecret) {
           $('#collapseAuthentication').collapse('show');
@@ -452,11 +452,13 @@
                     <div class="form-group form-group-sm row">
                       <label class="col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label" for="client_id">Client ID:</label>
                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <input id="client_id" name="client_id" autocomplete="on" value="3352aeffbd24d33f8859" class="form-control"/>
+                        <!-- <input id="client_id" name="client_id" autocomplete="on" value="3352aeffbd24d33f8859" class="form-control"/> -->
+                        <input id="client_id" name="client_id" autocomplete="on" value="f5f432035a0aff1a3bae413f15f129" class="form-control"/>
                       </div>
                       <label class="col-xs-6 col-sm-6 col-md-6 col-lg-6 control-label" for="client_secret">Client Secret:</label>
                       <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                        <input id="client_secret" name="client_secret" autocomplete="on" value="097f832242ad371d9f012770cabdb1e6cebc433a" class="form-control"/>
+                        <!-- <input id="client_secret" name="client_secret" autocomplete="on" value="097f832242ad371d9f012770cabdb1e6cebc433a" class="form-control"/> -->
+                        <input id="client_secret" name="client_secret" autocomplete="on" value="c09f3dfa9415739448ba8825bdbbbb" class="form-control"/>
                       </div>
                     </div>
                   </div>
